@@ -13,6 +13,7 @@ class Sms extends BaseResource
             'sender'      => $sender ?? config('nac-sms.sender'),
             'title'       => $title,
             'content'     => $content,
+            'encoding'    => 1,
         ], $options));
     }
 
@@ -25,6 +26,7 @@ class Sms extends BaseResource
             'sender'      => $sender ?? config('nac-sms.sender'),
             'title'       => $title,
             'content'     => $content,
+            'encoding'    => 1,
         ], $options));
     }
 
@@ -36,6 +38,7 @@ class Sms extends BaseResource
             'numbers'     => $numbers,
             'sender'      => $sender ?? config('nac-sms.sender'),
             'title'       => $title,
+            'encoding'    => 1,
         ], $options));
     }
 
@@ -48,6 +51,7 @@ class Sms extends BaseResource
             'sender'      => $sender ?? config('nac-sms.sender'),
             'title'       => $title,
             'content'     => $content,
+            'encoding'    => 1,
         ]);
     }
 
@@ -62,6 +66,7 @@ class Sms extends BaseResource
             'sender'      => $sender ?? config('nac-sms.sender'),
             'title'       => $title,
             'content'     => $content,
+            'encoding'    => 1,
             'sendingDate' => $sendingDate,
         ]);
     }
